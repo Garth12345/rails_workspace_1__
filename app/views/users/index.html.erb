@@ -2,6 +2,11 @@
 
 <h1>Users</h1>
 
+<%= link_to 'Microposts', microposts_path, class:"w3-button w3-round-large w3-pink" %>
+<%= link_to 'Create a New Micropost', new_micropost_path, class:"w3-button w3-round-large w3-pink" %>
+<%= link_to 'New User', new_user_path, class:"w3-button w3-round-large w3-pink" %>
+<br>
+<br>
 <table class="w3-table-all">
   <thead>
     <tr>
@@ -24,6 +29,3 @@
   </tbody>
 </table>
 
-<br>
-
-<%= link_to 'New User', new_user_path, class:"w3-button w3-round-large w3-pink" %>
