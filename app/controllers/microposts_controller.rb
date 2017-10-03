@@ -1,4 +1,6 @@
 class MicropostsController < ApplicationController
+  protect_from_forgery with: :exception
+  http_basic_authenticate_with name: "dhh", password: "secret", except: :index
   before_action :set_micropost, only: [:show, :edit, :update, :destroy]
 
   # GET /microposts
